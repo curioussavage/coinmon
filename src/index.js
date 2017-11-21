@@ -12,7 +12,7 @@ program
   .option('-c, --convert [currency]', 'Convert to your fiat currency', 'usd')
   .option('-f, --find [keyword]', 'Find specific coin data with coin symbol or name', null)
   .option('-t, --top [index]', 'Show the top coins ranked from 1 - [index] according to the market cap', null)
-  .option('-H, --humanize', 'Show market cap as a humanized number', false)
+  .option('-H, --humanize', 'Show market cap as a humanized number', true)
   .parse(process.argv);
 
 const find = program.find
